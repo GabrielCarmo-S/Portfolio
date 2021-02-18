@@ -5,11 +5,8 @@ import Img1 from "../img/test.png";
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
   background: var(--white);
   margin-left: 0;
-
   flex-direction: column;
 `;
 
@@ -17,9 +14,8 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  
   background: rgb(113,7,148);
   background: linear-gradient(90deg, rgba(113,7,148,1) 30%, rgba(171,0,255,1) 100%);
 
@@ -29,8 +25,7 @@ export const Text = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-right: 150px;
-
+  
   > p {
     color: var(--white);
     font-size: 20px;
@@ -61,8 +56,10 @@ export const MainButton = styled.div`
 export const Img = styled.div`
   display: none;
 
-  @media (min-width: 800px) {
+  @media (min-width: 900px) {
     margin-top: 70px;
+    margin-left: 150px;
+
     display: flex;
     width: 400px;
     height: 400px;
