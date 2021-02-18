@@ -12,24 +12,24 @@ export const Container = styled.div`
     padding: 11px 16px;
     margin: 0;
     top: 0;
-    background: var(--white);
+    background: linear-gradient(90deg, rgba(113,7,148,1) 30%, rgba(171,0,255,1) 100%);
 
     width: 100vw;
     height: 50px;
     
-    box-shadow: 0 5px 5px #f3f0f0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 
     > div {
       display: flex;
       align-items: center;
 
       > a {
-        color: var(--twitter);
+        color: var(--white);
         text-decoration: none;
         align-items: center;
 
         &:hover {
-          color: var(--gray);
+          color: var(--twitter);
         }
       }
 

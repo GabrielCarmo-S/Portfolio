@@ -1,10 +1,12 @@
 import styled, { css } from "styled-components";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import Img1 from "../img/test.png";
 
 export const Container = styled.div`
   display: flex;
   align-items: center;
   width: 100vw;
+  height: 100vh;
   background: var(--white);
   margin-left: 0;
 
@@ -14,18 +16,30 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 120px;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  
+  background: rgb(113,7,148);
+  background: linear-gradient(90deg, rgba(113,7,148,1) 30%, rgba(171,0,255,1) 100%);
+
+`;
+
+export const Text = styled.div`
+  display: flex;
+  align-items: center;
   flex-direction: column;
+  margin-right: 150px;
 
   > p {
-    color: var(--gray);
+    color: var(--white);
     font-size: 20px;
   }
   > p + p {
     margin-top: 10px;
   }
-
   > h1 {
+    color: var(--white);
     text-transform: uppercase;
     font-weight: 900;
   }
@@ -41,6 +55,25 @@ export const MainButton = styled.div`
 
   > a + a {
     margin-left: 20px;
+  }
+`;
+
+export const Img = styled.div`
+  display: none;
+
+  @media (min-width: 800px) {
+    margin-top: 70px;
+    display: flex;
+    width: 400px;
+    height: 400px;
+
+    background: url(${Img1});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    align-items: center;
+    justify-content: center;
   }
 `;
 
@@ -63,14 +96,3 @@ export const LinkedinIcon = styled(FaLinkedin)`
   ${iconCSS}
 `;
 
-export const Card = styled.div`
-  display: flex;
-  width: 300px;
-  height: 300px;
-  padding: 20px;
-
-  margin-top: 40px;
-
-  border-radius: 10px;
-  box-shadow:5px 5px 5px 5px #f3f0f0;
-`;

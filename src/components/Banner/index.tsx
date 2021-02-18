@@ -6,28 +6,31 @@ import {
   MainButton,
   GithubIcon,
   LinkedinIcon,
-  Card
+  Img,
+  Text,
 } from "./styles";
 
 const Banner: React.FC = () => {
   return (
     <Container>
       <Content>
-        <p>Olá, eu sou</p>
-        <h1>Gabriel Carmo</h1>
-        <p>Desenvolvedor FullStack</p>
+        <Text>
+          <p>Olá, eu sou</p>
+          <h1>Gabriel Carmo</h1>
+          <p>Desenvolvedor FullStack</p>
+
+          <MainButton>
+            <a href="#">
+              <GithubIcon />
+            </a>
+            <a href="#">
+              <LinkedinIcon />
+            </a>
+          </MainButton>
+        </Text>
+
+        <Img />
       </Content>
-
-      <MainButton>
-        <a href="#">
-          <GithubIcon />
-        </a>
-        <a href="#">
-          <LinkedinIcon />
-        </a>
-      </MainButton>
-
-      <Card /> 
     </Container>
   );
 };
