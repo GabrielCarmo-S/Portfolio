@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import Img1 from "../img/test.png";
+import Img1 from "../img/test1.svg";
 
 export const Container = styled.div`
   display: flex;
@@ -13,19 +13,23 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
   height: 100vh;
-  background: rgb(113,7,148);
-  background: linear-gradient(90deg, rgba(113,7,148,1) 30%, rgba(171,0,255,1) 100%);
-
+  background: rgb(213, 10, 162);
+  background: rgb(159, 10, 162);
+  background: linear-gradient(
+    90deg,
+    rgba(159, 10, 162, 1) 13%,
+    rgba(104, 10, 164, 1) 100%
+  );
 `;
 
 export const Text = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  
+
   > p {
     color: var(--white);
     font-size: 20px;
@@ -58,10 +62,9 @@ export const Img = styled.div`
 
   @media (min-width: 900px) {
     margin-top: 70px;
-    margin-left: 150px;
 
     display: flex;
-    width: 400px;
+    width: 600px;
     height: 400px;
 
     background: url(${Img1});
@@ -92,4 +95,3 @@ export const GithubIcon = styled(FaGithub)`
 export const LinkedinIcon = styled(FaLinkedin)`
   ${iconCSS}
 `;
-

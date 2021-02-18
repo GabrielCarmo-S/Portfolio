@@ -12,7 +12,11 @@ export const Container = styled.div`
     padding: 11px 16px;
     margin: 0;
     top: 0;
-    background: linear-gradient(90deg, rgba(113,7,148,1) 30%, rgba(171,0,255,1) 100%);
+    background: linear-gradient(
+    90deg,
+    rgba(159, 10, 162, 1) 13%,
+    rgba(104, 10, 164, 1) 100%
+  );
 
     width: 100vw;
     height: 50px;

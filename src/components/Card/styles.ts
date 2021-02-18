@@ -31,7 +31,7 @@ export const Cards = styled.div`
 
   &:hover {
   box-shadow: 0 24px 48px rgba(0,0,0,0.50), 0 10px 10px rgba(0,0,0,0.22);
-}
+  }
 `;
 
 export const Border = styled.div`
