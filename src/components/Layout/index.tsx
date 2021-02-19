@@ -11,6 +11,7 @@ const Layout: React.FC = () => {
       <Wrapper>
         <Header />
         <Banner />
+        <span>Meus Interesses</span>
         <Card />
       </Wrapper>
     </Container>

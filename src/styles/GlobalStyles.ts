@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   *{
@@ -6,12 +6,26 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     color: var(--primary);
+    
   }
   html, body, #root {
     max-height: 100vh;
     max-width: 100vw;
     width: 100%;
     height: 100%;
+
+    overflow-x: hidden;
+    overflow: overlay;
+
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: var(--twitter);
+      border-radius: 7px;
+    }
+
   }
   *, button, input{
     border: 0;

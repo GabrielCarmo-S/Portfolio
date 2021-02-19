@@ -17,12 +17,13 @@ export const Container = styled.div`
 
 export const Cards = styled.div`
   display: flex;
-  margin: 20px 10px;
+  margin: 20px 20px;
+
   width: 300px;
   height: 300px;
 
   justify-content: center;
-
+  
   border-radius: 10px;
 
   background: var(--white);

@@ -1,11 +1,12 @@
 import styled, { css } from "styled-components";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Img1 from "../img/test1.svg";
+import Img2 from "../img/test3.svg";
 
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  background: var(--white);
+
   margin-left: 0;
   flex-direction: column;
 `;
@@ -13,16 +14,32 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+ 
   width: 100%;
   height: 100vh;
-  background: rgb(213, 10, 162);
-  background: rgb(159, 10, 162);
+
   background: linear-gradient(
     90deg,
     rgba(159, 10, 162, 1) 13%,
     rgba(104, 10, 164, 1) 100%
   );
+`;
+
+
+
+export const Imga = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 100vh;
+
+  background: url(${Img2});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
 `;
 
 export const Text = styled.div`
