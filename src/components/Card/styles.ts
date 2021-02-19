@@ -1,5 +1,6 @@
-import styled, {css} from 'styled-components';
-import { FaReact, FaNode, FaDatabase } from 'react-icons/fa';
+import styled, { css } from "styled-components";
+import { FaReact, FaNode, FaDatabase } from "react-icons/fa";
+import Img2 from "../img/test4.svg";
 
 export const Container = styled.div`
   display: flex;
@@ -10,8 +11,54 @@ export const Container = styled.div`
 
   flex-direction: column;
 
-  @media(min-width: 800px){
+  background: url(${Img2});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 800px) {
+    width: 100vw;
+    height: 100vh;
+  }
+`;
+
+export const Interres = styled.div`
+  height: 30px;
+  width: 250px;
+  background: transparent;
+
+  display: flex;
+  justify-content: center;
+
+  font-size: 26px;
+  font-weight: 900;
+  color: rgb(109, 131, 242);
+
+  margin-top: 20px;
+
+  @media (min-width: 800px) {
+    margin-top: 120px
+  }
+ 
+`;
+
+export const Content = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+
+  flex-direction: column;
+
+  @media (min-width: 800px) {
     flex-direction: row;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: rgb(109, 131, 242);
+    text-align: center;
+    letter-spacing: 1px;
   }
 `;
 
@@ -23,19 +70,19 @@ export const Cards = styled.div`
   height: 300px;
 
   justify-content: center;
-  align-items:center;
+  align-items: center;
   flex-direction: column;
-  
+
   border-radius: 10px;
 
   background: var(--white);
 
   cursor: pointer;
 
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
   &:hover {
-  box-shadow: 0 24px 48px rgba(0,0,0,0.50), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
 
   > span {
@@ -70,11 +117,17 @@ const iconCSS = css`
   fill: var(--white);
 `;
 
-export const FrontIcon = styled(FaReact)`${iconCSS}`;
+export const FrontIcon = styled(FaReact)`
+  ${iconCSS}
+`;
 
-export const BackIcon = styled(FaNode)`${iconCSS}`;
+export const BackIcon = styled(FaNode)`
+  ${iconCSS}
+`;
 
-export const BdIcon = styled(FaDatabase)`${iconCSS}`;
+export const BdIcon = styled(FaDatabase)`
+  ${iconCSS}
+`;
 
 export const Text = styled.div`
   display: flex;
