@@ -23,15 +23,27 @@ export const Cards = styled.div`
   height: 300px;
 
   justify-content: center;
+  align-items:center;
+  flex-direction: column;
   
   border-radius: 10px;
 
   background: var(--white);
 
+  cursor: pointer;
+
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
   &:hover {
   box-shadow: 0 24px 48px rgba(0,0,0,0.50), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  > span {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
   }
 `;
 
@@ -47,18 +59,15 @@ export const Border = styled.div`
   background: var(--twitter);
 
   border-radius: 50%;
+
+  margin-bottom: 20px;
 `;
 
 const iconCSS = css`
   width: 51px;
   height: 51px;
-  cursor: pointer;
 
   fill: var(--white);
-  &:hover,
-  &.active {
-    fill: var(--gray);
-  }
 `;
 
 export const FrontIcon = styled(FaReact)`${iconCSS}`;
@@ -66,3 +75,24 @@ export const FrontIcon = styled(FaReact)`${iconCSS}`;
 export const BackIcon = styled(FaNode)`${iconCSS}`;
 
 export const BdIcon = styled(FaDatabase)`${iconCSS}`;
+
+export const Text = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 250px;
+  height: 100px;
+
+  > span {
+    font-size: 20px;
+    color: var(--twitter);
+  }
+
+  > span + span {
+    font-size: 16px;
+    color: var(--secondary);
+    margin-top: 20px;
+  }
+`;
