@@ -21,12 +21,12 @@ const Banner: React.FC = () => {
             <h1>Gabriel Carmo</h1>
             <p>Desenvolvedor FullStack</p>
             <MainButton>
-              <a href="#">
+              <div>
                 <GithubIcon />
-              </a>
-              <a href="#">
+              </div>
+              <div>
                 <LinkedinIcon />
-              </a>
+              </div>
             </MainButton>
           </Text>
           <Img />

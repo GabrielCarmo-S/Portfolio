@@ -69,7 +69,7 @@ export const MainButton = styled.div`
   height: 10px;
   padding-top: 30px;
 
-  > a + a {
+  > div + div {
     margin-left: 20px;
   }
 `;

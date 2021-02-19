@@ -6,10 +6,10 @@ const Header: React.FC = () => {
   return (
     <Container>
       <div>
-        <a href="">Home</a>
-        <a href="">Sobre mim</a>
-        <a href="">Projetos</a>
-        <a href="">Contatos</a>
+        <p>Home</p>
+        <p>Sobre mim</p>
+        <p>Projetos</p>
+        <p>Contatos</p>
       </div>
     </Container>
   );

@@ -27,17 +27,19 @@ export const Container = styled.div`
       display: flex;
       align-items: center;
 
-      > a {
+      > p {
         color: var(--white);
         text-decoration: none;
         align-items: center;
+
+        cursor: pointer;
 
         &:hover {
           color: var(--twitter);
         }
       }
 
-      > a + a {
+      > p + p {
         margin-left: 30px;
       }
     }
