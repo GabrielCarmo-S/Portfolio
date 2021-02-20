@@ -9,7 +9,10 @@ import {
   CardTitle,
   CardText,
   DevIcon,
-  LandIcon
+  LandIcon,
+  BackIcon,
+  BdIcon,
+  ApiIcon
 } from "./styles";
 
 const Solutions: React.FC = () => {
@@ -33,21 +36,22 @@ const Solutions: React.FC = () => {
           <CardText>Criação de Landings Pages</CardText>
         </Card>
       </Content>
+
       <Content>
         <Card>
-          <DesignIcon />
-          <CardTitle>UI Design</CardTitle>
-          <CardText>Faço o UI Design de Sites. Tanto Landing Page, quanto Aplicativos Mobile</CardText>
+          <BackIcon />
+          <CardTitle>Backend</CardTitle>
+          <CardText>Faço o backend do site em NodeJS, PHP</CardText>
         </Card>
         <Card>
-          <DesignIcon />
-          <CardTitle>UI Design</CardTitle>
-          <CardText>Faço o UI Design de Sites. Tanto Landing Page, quanto Aplicativos Mobile</CardText>
+          <BdIcon />
+          <CardTitle>Banco de Dados</CardTitle>
+          <CardText>Utilizo Mysql, Postgress e MongoDB nas aplicações</CardText>
         </Card>
         <Card>
-          <DesignIcon />
-          <CardTitle>UI Design</CardTitle>
-          <CardText>Faço o UI Design de Sites. Tanto Landing Page, quanto Aplicativos Mobile</CardText>
+          <ApiIcon />
+          <CardTitle>Integrações</CardTitle>
+          <CardText>Faço integrações de API'S para seu front-ebd e back-end</CardText>
         </Card>
       </Content>
     </Container>

@@ -2,6 +2,9 @@ import styled, { css } from "styled-components";
 import DeIcon from "../img/design.svg";
 import DevsIcon from "../img/desenvolvimento-web.svg";
 import LandP from "../img/landing-page.svg";
+import BackendIcon from "../img/backend.svg";
+import BancoIcon from "../img/data-storage.svg";
+import APIIcon from "../img/browser.svg";
 
 export const Container = styled.div`
   display: flex;
@@ -49,7 +52,7 @@ export const Card = styled.div`
   width: 300px;
   height: 300px;
 
-  background: #2626BC;
+  background: #2626bc;
 
   border-radius: 5px;
 
@@ -61,7 +64,7 @@ export const Card = styled.div`
 
   &:focus,
   &:hover {
-    background: #E30970;
+    background: #e30970;
   }
 `;
 
@@ -99,6 +102,33 @@ export const LandIcon = styled.div`
   background-repeat: no-repeat !important;
   background-size: cover;
   background: url(${LandP});
+`;
+
+export const BackIcon = styled.div`
+  ${iconCSS}
+
+  background-position: center;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  background: url(${BackendIcon});
+`;
+
+export const BdIcon = styled.div`
+  ${iconCSS}
+
+  background-position: center;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  background: url(${BancoIcon});
+`;
+
+export const ApiIcon = styled.div`
+  ${iconCSS}
+
+  background-position: center;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  background: url(${APIIcon});
 `;
 
 export const CardTitle = styled.div`
