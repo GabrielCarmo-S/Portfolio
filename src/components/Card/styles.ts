@@ -1,6 +1,8 @@
 import styled, { css } from "styled-components";
-import { FaReact, FaNode, FaDatabase } from "react-icons/fa";
 import Img2 from "../img/test4.svg";
+import Img3 from "../img/g12.svg";
+import Img4 from "../img/g13.svg";
+import Img5 from "../img/g14.svg";
 
 export const Container = styled.div`
   display: flex;
@@ -17,8 +19,8 @@ export const Container = styled.div`
   background-size: cover;
 
   @media (min-width: 800px) {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
   }
 `;
 
@@ -34,12 +36,7 @@ export const Interres = styled.div`
   font-weight: 900;
   color: rgb(109, 131, 242);
 
-  margin-top: 20px;
-
-  @media (min-width: 800px) {
-    margin-top: 120px
-  }
- 
+  margin-top: 60px;
 `;
 
 export const Content = styled.div`
@@ -59,6 +56,8 @@ export const Content = styled.div`
     color: rgb(109, 131, 242);
     text-align: center;
     letter-spacing: 1px;
+
+    margin: 60px;
   }
 `;
 
@@ -66,8 +65,8 @@ export const Cards = styled.div`
   display: flex;
   margin: 20px 20px;
 
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
 
   justify-content: center;
   align-items: center;
@@ -75,14 +74,26 @@ export const Cards = styled.div`
 
   border-radius: 10px;
 
-  background: var(--white);
+  background: rgb(9, 9, 121);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(126, 43, 204, 1) 0%,
+    rgba(137, 35, 204, 1) 100%
+  );
 
   cursor: pointer;
 
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
   &:hover {
-    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background: rgb(164, 88, 199);
+    background: linear-gradient(
+      90deg,
+      rgba(164, 88, 199, 1) 0%,
+      rgba(204, 43, 168, 1) 0%,
+      rgba(171, 35, 204, 1) 100%
+    );
   }
 
   > span {
@@ -111,22 +122,37 @@ export const Border = styled.div`
 `;
 
 const iconCSS = css`
-  width: 51px;
-  height: 51px;
+  width: 150px;
+  height: 150px;
 
-  fill: var(--white);
+  margin-bottom: 20px;
 `;
 
-export const FrontIcon = styled(FaReact)`
+export const FrontIcon = styled.div`
   ${iconCSS}
+
+  background: url(${Img4});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
-export const BackIcon = styled(FaNode)`
+export const BackIcon = styled.div`
   ${iconCSS}
+
+  background: url(${Img3});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
-export const BdIcon = styled(FaDatabase)`
+export const BdIcon = styled.div`
   ${iconCSS}
+
+  background: url(${Img5});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 export const Text = styled.div`
@@ -137,15 +163,15 @@ export const Text = styled.div`
   flex-direction: column;
   width: 250px;
   height: 100px;
-
   > span {
     font-size: 20px;
-    color: var(--twitter);
+    color: var(--white);
   }
 
   > span + span {
     font-size: 16px;
     color: var(--secondary);
+
     margin-top: 20px;
   }
 `;

@@ -6,7 +6,6 @@ import {
   FrontIcon,
   BackIcon,
   BdIcon,
-  Border,
   Text,
   Content,
   Interres
@@ -18,9 +17,7 @@ const Card: React.FC = () => {
       <Interres>Meus Interesses</Interres>
       <Content>
         <Cards>
-          <Border>
             <FrontIcon />
-          </Border>
           <Text>
             <span>Front-End</span>
             <span>
@@ -31,9 +28,7 @@ const Card: React.FC = () => {
         </Cards>
 
         <Cards>
-          <Border>
             <BackIcon />
-          </Border>
           <Text>
             <span>Back-End</span>
             <span>
@@ -43,9 +38,7 @@ const Card: React.FC = () => {
           </Text>
         </Cards>
         <Cards>
-          <Border>
             <BdIcon />
-          </Border>
           <Text>
             <span>Banco de Dados</span>
             <span>
