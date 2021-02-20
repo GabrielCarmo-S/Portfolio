@@ -11,7 +11,12 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
 
-  background: red;
+  background: rgb(115, 54, 219);
+  background: linear-gradient(
+    90deg,
+    rgba(115, 54, 219, 1) 15%,
+    rgba(34, 32, 162, 1) 88%
+  );
 
   flex-direction: column;
 `;
@@ -44,7 +49,7 @@ export const Card = styled.div`
   width: 300px;
   height: 300px;
 
-  background: blue;
+  background: #2626BC;
 
   border-radius: 5px;
 
@@ -56,7 +61,7 @@ export const Card = styled.div`
 
   &:focus,
   &:hover {
-    background: red;
+    background: #E30970;
   }
 `;
 
@@ -71,7 +76,7 @@ const iconCSS = css`
 
 export const DesignIcon = styled.div`
   ${iconCSS}
-  
+
   background-position: center;
   background-repeat: no-repeat !important;
   background-size: cover;
@@ -95,7 +100,6 @@ export const LandIcon = styled.div`
   background-size: cover;
   background: url(${LandP});
 `;
-
 
 export const CardTitle = styled.div`
   color: var(--white);
