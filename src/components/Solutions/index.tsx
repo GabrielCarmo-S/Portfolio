@@ -33,7 +33,7 @@ const Solutions: React.FC = () => {
           <CardText>Criação de Landings Pages</CardText>
         </Card>
       </Content>
-      {/* <Content>
+      <Content>
         <Card>
           <DesignIcon />
           <CardTitle>UI Design</CardTitle>
@@ -49,7 +49,7 @@ const Solutions: React.FC = () => {
           <CardTitle>UI Design</CardTitle>
           <CardText>Faço o UI Design de Sites. Tanto Landing Page, quanto Aplicativos Mobile</CardText>
         </Card>
-      </Content> */}
+      </Content>
     </Container>
   );
 };
