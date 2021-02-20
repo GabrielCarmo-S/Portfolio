@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../Banner";
 import Card from "../Card";
+import Footer from "../Footer";
 import Header from "../Header";
 import Solutions from "../Solutions";
 
@@ -14,6 +15,7 @@ const Layout: React.FC = () => {
         <Banner />
         <Card />
         <Solutions />
+        <Footer />
       </Wrapper>
     </Container>
   );
