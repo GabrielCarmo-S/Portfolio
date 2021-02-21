@@ -15,22 +15,23 @@ const Contact: React.FC = () => {
   return (
     <Container>
       <Content>
+        <span>Contate-nos</span>
         <ContactIcon />
         <Text>
-          <span>dddddddddddddddddddd</span>
-          <span>dddddddddddddddddddddddddd</span>
+          <span>Olá, se precisar de algo nos contate-nos.</span>
         </Text>
 
         <ContainerCard>
-        <CardIcon>
-          <WhatsIcon />
-        </CardIcon>
-        <CardIcon>
-          <EmailIcon />
-        </CardIcon>
-      </ContainerCard>
+          <CardIcon>
+            <WhatsIcon />
+            <p>Mensagens</p>
+          </CardIcon>
+          <CardIcon>
+            <EmailIcon />
+            <p>E-mail</p>
+          </CardIcon>
+        </ContainerCard>
       </Content>
-      
     </Container>
   );
 };
