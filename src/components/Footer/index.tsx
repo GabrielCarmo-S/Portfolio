@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   return (
     <Container>
       <Text>
-      <p>Feito por Gabriel Carmo</p>
+        <p>Gabriel Carmo</p>
         <p>Feito por Gabriel Carmo</p>
       </Text>
     </Container>

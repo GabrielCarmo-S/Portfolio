@@ -65,7 +65,7 @@ export const Cards = styled.div`
   display: flex;
   margin: 20px 20px;
 
-  width: 350px;
+  width: 300px;
   height: 350px;
 
   justify-content: center;
@@ -170,7 +170,7 @@ export const Text = styled.div`
 
   > span + span {
     font-size: 16px;
-    color: var(--secondary);
+    color: var(--white);
 
     margin-top: 20px;
   }
