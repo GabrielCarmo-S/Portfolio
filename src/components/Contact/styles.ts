@@ -29,19 +29,17 @@ export const Content = styled.div`
     color: var(--white);
   }
 
-  background: #8a2387;
+  background: #da22ff; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to right,
-    #f27121,
-    #e94057,
-    #8a2387
-  ); 
+    to bottom,
+    #9733ee,
+    #da22ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to right,
-    #f27121,
-    #e94057,
-    #8a2387
-  ); 
+    to bottom,
+    #9733ee,
+    #da22ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 `;
 
 export const ContactIcon = styled.div`

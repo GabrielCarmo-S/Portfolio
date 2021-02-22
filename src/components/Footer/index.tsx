@@ -1,12 +1,24 @@
-import React from 'react';
+import React from "react";
 
-import { Container, Text } from './styles';
+import {
+  Container,
+  Text,
+  LinkedinIcon,
+  GithubIcon,
+  ContentIcon,
+} from "./styles";
 
 const Footer: React.FC = () => {
   return (
     <Container>
       <Text>
         <p>Gabriel Carmo</p>
+      </Text>
+      <ContentIcon>
+        <LinkedinIcon />
+        <GithubIcon />
+      </ContentIcon>
+      <Text>
         <p>Feito por Gabriel Carmo</p>
       </Text>
     </Container>
