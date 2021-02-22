@@ -1,5 +1,7 @@
 import styled, { css } from "styled-components";
 import Img1 from "../img/contact.svg";
+import Img4 from "../img/g15.svg";
+
 import Img2 from "../img/contact1.svg";
 import Img3 from "../img/email.svg";
 
@@ -40,6 +42,7 @@ export const Content = styled.div`
     #9733ee,
     #da22ff
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 `;
 
 export const ContactIcon = styled.div`
@@ -56,6 +59,10 @@ export const ContactIcon = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media(min-width: 700px){
+    background: url(${Img4});
+  }
 `;
 
 export const Text = styled.div`
@@ -97,6 +104,20 @@ export const CardIcon = styled.div`
   > p {
     color: var(--twitter);
     margin-bottom: 10px;
+  }
+
+  &:hover {
+    background: rgb(164, 88, 199);
+    background: linear-gradient(
+      90deg,
+      rgba(164, 88, 199, 1) 0%,
+      rgba(204, 43, 168, 1) 0%,
+      rgba(171, 35, 204, 1) 100%
+    );
+
+    > p, svg {
+      color: white;
+    }
   }
 `;
 
