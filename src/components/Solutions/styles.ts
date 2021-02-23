@@ -42,7 +42,7 @@ export const Content = styled.div`
 
   flex-direction: column;
 
-  @media (min-width: 700px) {
+  @media (min-width: 1050px) {
     flex-direction: row;
   }
 `;

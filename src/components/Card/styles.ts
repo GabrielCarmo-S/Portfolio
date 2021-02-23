@@ -49,7 +49,7 @@ export const Content = styled.div`
 
   flex-direction: column;
 
-  @media (min-width: 800px) {
+  @media (min-width: 850px) {
     flex-direction: row;
     font-size: 1.5rem;
     font-weight: 900;
@@ -57,7 +57,7 @@ export const Content = styled.div`
     text-align: center;
     letter-spacing: 1px;
 
-    margin: 60px;
+    margin:20px 60px;
   }
 `;
 
