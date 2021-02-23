@@ -8,7 +8,7 @@ import {
   LinkedinIcon,
   Img,
   Text,
-  Imga
+  Imga,
 } from "./styles";
 
 const Banner: React.FC = () => {
@@ -22,16 +22,19 @@ const Banner: React.FC = () => {
             <p>Desenvolvedor FullStack</p>
             <MainButton>
               <div>
-                <GithubIcon />
+                <a href="https://github.com/GabrielCarmo-S">
+                  <GithubIcon />
+                </a>
               </div>
               <div>
-                <LinkedinIcon />
+                <a href="https://www.linkedin.com/in/gabrielcarmo-s/">
+                  <LinkedinIcon />
+                </a>
               </div>
             </MainButton>
           </Text>
           <Img />
         </Imga>
-        
       </Content>
     </Container>
   );

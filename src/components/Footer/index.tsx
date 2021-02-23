@@ -15,8 +15,12 @@ const Footer: React.FC = () => {
         <p>Gabriel Carmo</p>
       </Text>
       <ContentIcon>
-        <LinkedinIcon />
-        <GithubIcon />
+        <a href="https://www.linkedin.com/in/gabrielcarmo-s/">
+          <LinkedinIcon />
+        </a>
+        <a href="https://github.com/GabrielCarmo-S">
+          <GithubIcon />
+        </a>
       </ContentIcon>
       <Text>
         <p>Feito por Gabriel Carmo</p>

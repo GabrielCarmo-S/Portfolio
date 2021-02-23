@@ -9,11 +9,11 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
 
-  background: var(--white);
-
+  background-image: linear-gradient(to right top, #8041d1, #973dd2, #ad38d1, #c132d0, #d52acd);
+  
   > h1 {
     margin: 20px;
-    color: var(--secondary);
+    color: var(--white);
   }
 
   flex-direction: column;
