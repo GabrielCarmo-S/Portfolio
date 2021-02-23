@@ -98,10 +98,10 @@ const iconCSS = css`
   width: 31px;
   height: 31px;
   cursor: pointer;
-  fill: var(--twitter);
+  fill: var(--white);
   &:hover,
   &.active {
-    fill: var(--gray);
+    fill: var(--twitter);
   }
 `;
 
