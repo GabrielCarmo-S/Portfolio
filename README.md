@@ -1,6 +1,6 @@
 <h1 align="center">
     <br>Portfolio<br/>
-        ReactJS
+    ReactJS/Typescript
 </h1>
 
 <p align="center">
