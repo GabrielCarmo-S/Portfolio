@@ -13,6 +13,15 @@
 
 Portfolio Responsivo.
 
+<div align="center">
+  <img alt="design do projeto" height="525" width="100%" src="./github/m1.gif" />
+</div>
+
+## Tela Mobile
+<div align="center">
+  <img alt="demo-mobile" height="525" src="./github/m2.gif" />
+</div>
+
 <a href="https://portfolio-gabrielcarmo-s.netlify.app" align="center">Para testar o clone.</a>
 
 ## :rocket: Tecnologias
