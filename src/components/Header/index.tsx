@@ -1,7 +1,19 @@
+import styles from './styles.module.scss';
+
 export function Header() {
   return (
-    <div>
-      <h2>EEEE</h2>
+    <div className={styles.container}>
+      <div className={styles.wrapper}>
+        <div>
+          <a href="">Portfólio</a>
+        </div>
+        <div>
+          <a href="">Portfólio</a>
+          <a href="">Portfólio</a>
+          <a href="">Portfólio</a>
+          <a href="">Portfólio</a>
+        </div>
+      </div>
     </div>
   );
 }
