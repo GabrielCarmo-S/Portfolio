@@ -122,4 +122,8 @@
 			color: var(--gray);
 		}
 	}
+
+	@media (max-width: 960px) {
+		flex-direction: column;
+	}
 }
