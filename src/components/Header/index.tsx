@@ -7,12 +7,6 @@ export function Header() {
         <div>
           <a href="">Portfólio</a>
         </div>
-        <div>
-          <a href="">Portfólio</a>
-          <a href="">Portfólio</a>
-          <a href="">Portfólio</a>
-          <a href="">Portfólio</a>
-        </div>
       </div>
     </div>
   );
