@@ -16,9 +16,7 @@ export function Banner() {
           </div>
         </div>
         <div>
-
           <Image src="/banner.svg" width={300} height={254.47} alt="Imagem de pessoa no celular" />
-
         </div>
       </div>
     </div>
