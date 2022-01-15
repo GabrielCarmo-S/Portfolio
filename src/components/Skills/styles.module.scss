@@ -1,0 +1,34 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 100vw;
+
+	max-width: 1140px;
+
+	@media (max-width: 1140px) {
+		max-width: 960px;
+	}
+
+	@media (max-width: 960px) {
+		max-width: 720px;
+	}
+
+	@media (max-width: 720px) {
+		max-width: 540px;
+	}
+
+	@media (max-width: 540px) {
+		max-width: 90%;
+	}
+}
